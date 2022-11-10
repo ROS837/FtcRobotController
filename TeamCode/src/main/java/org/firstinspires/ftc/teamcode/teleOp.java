@@ -14,7 +14,7 @@ public class teleOp extends LinearOpMode {
         waitForStart();
 
         while(opModeIsActive()){
-            if(gamepad1.a) {
+            if(gamepad1.dpad_down) {
                 robot.lF.setDirection(DcMotorSimple.Direction.FORWARD);
                 robot.rB.setDirection(DcMotorSimple.Direction.REVERSE);
                 robot.rF.setDirection(DcMotorSimple.Direction.REVERSE);
@@ -30,7 +30,7 @@ public class teleOp extends LinearOpMode {
                 robot.rB.setPower(0);
             }
 
-            if(gamepad1.b) {
+            if(gamepad1.dpad_right) {
                 robot.lF.setDirection(DcMotorSimple.Direction.FORWARD);
                 robot.rB.setDirection(DcMotorSimple.Direction.FORWARD);
                 robot.rF.setDirection(DcMotorSimple.Direction.REVERSE);
@@ -46,7 +46,7 @@ public class teleOp extends LinearOpMode {
                 robot.rB.setPower(0);
             }
 
-            if(gamepad1.x) {
+            if(gamepad1.dpad_left) {
                 robot.lF.setDirection(DcMotorSimple.Direction.REVERSE);
                 robot.rB.setDirection(DcMotorSimple.Direction.REVERSE);
                 robot.rF.setDirection(DcMotorSimple.Direction.FORWARD);
@@ -62,7 +62,7 @@ public class teleOp extends LinearOpMode {
                 robot.rB.setPower(0);
             }
 
-            if(gamepad1.y) {
+            if(gamepad1.dpad_up) {
                 robot.lF.setDirection(DcMotorSimple.Direction.REVERSE);
                 robot.rB.setDirection(DcMotorSimple.Direction.FORWARD);
                 robot.rF.setDirection(DcMotorSimple.Direction.FORWARD);
