@@ -1,20 +1,23 @@
 /*package org.firstinspires.ftc.teamcode;
+
 import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
 import com.qualcomm.robotcore.hardware.DcMotorSimple;
 
 @com.qualcomm.robotcore.eventloop.opmode.TeleOp(name = "TeleOp", group = "teleOp")
-public class teleOp extends LinearOpMode {
+public class colinTeleOp extends LinearOpMode {
     Robot robot;
 
     @Override
     public void runOpMode() throws InterruptedException {
         robot = new Robot(this);
 
+        double x; // JOYPAD X
         double y; // JOYPAD Y
 
         waitForStart();
 
         while(opModeIsActive()){
+            x = gamepad1.left_stick_x;
             y = gamepad1.left_stick_y;
             robot.lF.setPower(0);
             robot.lB.setPower(0);
@@ -43,4 +46,5 @@ public class teleOp extends LinearOpMode {
             }
         }
     }
-}*/
+}
+*/
